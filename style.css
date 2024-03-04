@@ -1,7 +1,25 @@
 body{
-    background:#ddd;
-    height: 100%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #ededed;
+    margin: 0;
+    padding: 0;
 }
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #128C7E;
+}
+
 
 #container{
     width: 100%;
@@ -13,17 +31,71 @@ body{
 .container2 {
     width: 50%;
     height: 100%;
-    border: 1px solid lightgray;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
 }
 
 .container3 {
-    padding: 50px;
+    margin-top: auto;
+    text-align: center;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+#chat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ks-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#temptext {
+    font-size: 20px;
+    color: #777;
+}
+
+/* Chat bubble styling */
+.ks-item a {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.ks-avatar {
+    margin-right: 10px;
+}
+
+.ks-avatar img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.ks-body {
+    flex: 1;
+}
+
+.ks-name {
+    font-weight: bold;
+}
+
+.ks-datetime {
+    color: #777;
+    font-size: 12px;
+}
+
+/* Active chat styling */
+.ks-item.ks-active {
+    background-color: #e2f3ff;
 }
 
 .ks-messenger {

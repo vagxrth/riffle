@@ -21,19 +21,9 @@ class ChatHandler{
         this.mins = clock.getMinutes();
     }
 
-    getTime(){
-        // Time Stamp creation for messages
-        this.mins += 1;
-        if(this.mins === 60){
-            this.hours += 1;
-            this.mins = 0;
-        }
-
-        if(this.hours === 24){
-            this.hours = 0;
-        }
-
-        return ("0" + this.hours).slice(-2)+":"+("0" + this.mins).slice(-2);
+    getTime() {
+        const now = new Date();
+        return ("0" + now.getHours()).slice(-2) + ":" + ("0" + now.getMinutes()).slice(-2);
     }
 
     createNode(id){

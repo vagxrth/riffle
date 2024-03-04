@@ -1,8 +1,20 @@
-
+// Importing ChatHandler and chat_names from external module
 import { ChatHandler, chat_names } from './ChatHandler.js';
 
-onload = function () {
+// Function to authenticate user
+function authenticateUser() {
+    const password = prompt("Please enter the password:");
+    // Add your authentication logic here
+    if (password === "dsaproject") {
+        // Call the function to generate chat messages after successful authentication
+        generateChatMessages();
+    } else {
+        alert("Invalid password. Please try again.");
+    }
+}
 
+// Function to generate chat messages after successful authentication
+function generateChatMessages() {
     const chatlist = document.getElementById('chat-list');
     const add = document.getElementById('generate-step');
     const text = document.getElementById('temptext');
@@ -29,4 +41,9 @@ onload = function () {
             text.innerHTML = "New message from "+chat_names[idOfMsg] + "<br>" + text.innerHTML;
         }
     };
+}
+
+// Call the authenticateUser function when the page loads
+window.onload = function() {
+    authenticateUser();
 };
