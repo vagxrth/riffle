@@ -1,9 +1,9 @@
 # Project Name
-WhatsApp Chat Generator
+Riffle: Chat Generator Application
 
 
 ## Introduction
-WhatsApp chat generator using linked lists & LRU cache for realistic conversation simulation. Seamlessly manages chat content programmatically with data structures & algorithms.
+A chat generator using linked lists & LRU cache for realistic conversation simulation. Seamlessly manages chat content programmatically with data structures & algorithms.
  
 
 ## Tech Stack
