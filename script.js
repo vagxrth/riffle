@@ -5,7 +5,7 @@ import { ChatHandler, chat_names } from './ChatHandler.js';
 function authenticateUser() {
     const password = prompt("Please enter the password:");
     // Add your authentication logic here
-    if (password === "dsaproject") {
+    if (password === "riffle") {
         // Call the function to generate chat messages after successful authentication
         generateChatMessages();
     } else {
